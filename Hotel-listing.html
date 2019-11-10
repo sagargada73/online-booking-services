@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="stylesheet" href="home-style.css">
+		<style>
+		body{
+			background-image:url("3.jpg");
+			
+		}
+		.flex-container{
+			display:flex;
+			height:100vh;
+			align-content:stretch;
+			overflow:hidden;
+			margin-bottom:1px;
+		}
+		#modify-search{
+			padding-top:10px;
+			width:100%;
+		}
+		#left
+		{
+			display:flex;
+			flex-direction:column;
+			border:1px solid #d1a377;
+			width:30%;
+			height:100%;
+		}
+		#left > div{
+			width:100%;
+			height:320px;
+		}
+		#left #price{
+			height:200px;
+		}
+		#left #rating{
+			height:230px;
+			font-size:22px;
+			padding-left:20px;
+		}
+		#left #ammeneties{
+			font-size:22px;
+			padding-left:20px;
+		}
+		 #right{
+			width:90%;
+			display:flex;
+			flex-direction:column;
+			height:100%;
+			border:1px solid #d1a377;
+		}
+		#right #sortby{
+			width:100%;
+			height:auto;
+			display:flex;
+			flex-direction:column;
+			border:1px solid #d1a377;
+		}
+		#sortby > div{
+			width:100%;
+			border:1px solid #d1a377;
+			height:30px;
+		}
+		#hotel-listings{
+			width:100%;
+			display:flex;
+			flex-direction:column;
+			border:1px solid #d1a377;
+		}
+		.listing{
+			border:1px solid #d1a377;
+			display:flex;
+			height:auto;
+		}
+		.listing .listing-photo{
+			width:40%;
+			height:220px;
+			text-align:center;
+			padding:10px;
+		}
+		.listing-photo img{
+			width:90%;
+			height:80%;
+		}
+		.listing-data{
+			display:flex;
+			padding:10px;
+			width:70%;
+			height:220px;
+		}
+		.listing-data .listing-left{
+			width:50%;
+			height:80%;
+		}
+		.listing .listing-right{
+
+		}
+		.slider{
+			width:300px;
+			height:100px;
+			display:flex;
+			overflow-x:auto;
+		}
+		
+		.slide{
+			width:300px;
+			flex-shrink:0;
+			height:20%;
+		}
+		#sortwhom ul a{
+		color: #291b27;
+		}
+	
+		
+	</style>
+</head>
+<body>
+<div id="page-wrapper">
+	<ul>
+			<li><a href="#Home">LOGO</a></li>
+			<li><a href="Flights.html">Flights</a></li>
+			<li><a href="Hotels.html">Hotels</a></li>
+			<li><a href="TopDeals.html">Top Deals</a></li>
+			<div class="floatRight">
+			<li><a href="SignUp.html">Sign in</a></li>
+			<li><a href="Login.html">Login</a></li></div>
+	</ul>
+	<div id="modify-search"><h2>Modify Search</h2></div>
+	<div class="flex-container">
+		<div id="left">
+			<div id="price">
+				<div class="slider">
+				  <div class="slide" id="slide-1"></div>
+				  <div class="slide" id="slide-2"></div>
+				  <div class="slide" id="slide-3"></div>
+				  <div class="slide" id="slide-4"></div>
+				  <div class="slide" id="slide-5"></div>
+				</div>
+			
+			</div>
+			<hr>
+			<div id="rating"><h3>Ratings</h3><br>
+				<input type="checkbox" name="rating"> 4 and Above<br>
+				<input type="checkbox" name="rating"> 3 to 4<br>
+				<input type="checkbox" name="rating"> 2 to 3<br>
+				<input type="checkbox" name="rating"> 1 to 2<br>
+				<input type="checkbox" name="rating"> 1 and below<br>
+			</div>
+			<hr>
+			<div id="ammeneties"><h3>Ammeneties</h3><br>
+			<input type="checkbox" name="amm">  Swimming Pool<br>
+			<input type="checkbox" name="amm">  AC<br>
+			<input type="checkbox" name="amm">  TV<br>
+			<input type="checkbox" name="amm">  WiFi<br>
+				
+			</div>
+		</div>
+		<div id="right">
+			<div id = "sortby">
+				<div id="saveonhotels">Save on Hotels</div>
+				<div id="addsearch" style="width: 100%"> 
+					<div id="address" style="float:left">
+						Adrdress Search
+						<div id="searchit" style="float:right;margin-left:100px;">
+							<input type="search" name="adsearch" placeholder="Enter address to search" style="width:100%;">
+						</div>
+					</div>	
+				</div>
+				<div id="sort">
+					<div id="sortid" style="float:left;">
+					Sort by               
+						<div id=" sortwhom" style="float:right;margin-left:100px;">
+						<ul style="display:inline-block;">
+							<select>
+							  <option value="volvo">Price</option>
+							  <option value="Rating">Rating</option>
+							  <option value="Features">Features</option>
+							</select>
+						</ul>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			<div id = "hotel-listings">
+				<div class="listing">
+					<div class="listing-photo"><img src="oberoi-room.jpg" width="100%" height="100%"></div>
+					<div class="listing-data">
+						<div class="listing-left">
+								<h3>The Oberois:</h3>
+									<br><br>
+								<h4>Ratings( 5 stars)</h4>
+							</div>
+						<div id="listing-right">
+								<h3>10,000</h3><br><br>
+								<input type="button" class="button" onclick="location.href = 'Confirm-hotel.html';" name="view" value="View">
+						</div>
+					</div>
+				</div>
+				<div class="listing">
+					<div class="listing-photo"><img src="golden-palm.jpg" width="100%" height="100%"></div>
+					<div class="listing-data">
+						<div class="listing-left">
+								<h3>The Golden Palm:</h3>
+									<br><br>
+								<h4>Ratings( 4.6 stars)</h4>
+							</div>
+						<div id="listing-right">
+								<h3>6,000</h3><br><br>
+								<input type="button" class="button" onclick="location.href = 'Confirm-hotel.html';" name="view" value="View">
+						</div>
+					</div>
+				</div>
+				<div class="listing">
+					<div class="listing-photo"><img src="" width="100%" height="100%"></div>
+					<div class="listing-data">
+						<div class="listing-left">
+								<h3>Hotel Name:</h3>
+									<br><br>
+								<h4>Ratings(stars)</h4>
+							</div>
+						<div id="listing-right">
+								<h3>Price</h3><br><br>
+								<input type="button" class="button" onclick="location.href = 'Confirm-hotel.html';" name="view" value="View">
+						</div>
+					</div>
+				</div>
+				
+			
+			</div>
+	</div>
+<footer>
+	<ul class="floatRight footer">
+			<li><a href="#ContactUs">Contact us</a></li>
+			<li><a href="#FollowUs">Follow us</a></li>
+			
+	</ul>
+</footer>
+</div>
+</body>
+</html>

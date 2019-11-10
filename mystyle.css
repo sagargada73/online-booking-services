@@ -1,0 +1,101 @@
+/*opacity*/
+/*icon*/
+
+body{
+	margin: 0;
+  padding: 0;
+	background-repeat: no-repeat;
+	background-size:cover;
+  color: #d1a377; 
+}
+.align{
+ width: 800px;
+ margin: 0 auto;
+}
+form{
+  align-content: center;
+  border-radius: 5px;
+ /* background-color: #291b27; */
+  color: #d1a377;
+  border: 25px;
+  padding: 30px;
+  margin: 25px;
+  font-size: 20px;
+  font-family:cursive;
+}
+
+input{
+  border: 8px;
+  width: 98%;
+  border: 2px solid #d1a377;
+}
+.fifty{
+  width: 48%;
+  display: inline-block;
+  padding: 4px;
+  margin:0px;
+}
+.button{
+  padding: 5px;
+  color:#d1a377;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.button:hover{
+  background-color: transparent;
+  border-color: #d1a377;
+}
+
+ul{
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+h1{
+  padding-left: 90px;
+  color: #d1a377;
+}
+li{
+	float:left;
+}
+
+.floatRight{
+	float:right;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+li a{
+  font-size:20px;
+  display: block;
+  color: #d1a377; 
+  text-align: center;
+  padding: 14px 16px;
+}
+li a:hover:not(.active) {
+  background-color: #d1a377;
+  color: black;
+}
+
+
+.active {
+  background-color: #4CAF50;
+  color:#d1a377 ;
+}
+
+
+fieldset{
+  border-color: #d1a377;
+  border-spacing: 10px;
+}
+
+img{
+  padding: 20px;
+}
+
+

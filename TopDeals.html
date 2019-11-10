@@ -1,0 +1,153 @@
+<!doctype html>
+<head>
+	<link rel="stylesheet" type="text/css" href="home-style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<style>
+		body{
+			margin: 0;
+ 			padding: 0;
+ 			background-image: url("3.jpg");
+			background-repeat: no-repeat;
+			background-size:100%;
+			width: 100%;
+			color: #d1a377;
+		}
+	#top-deal-div{
+		width:100%;
+
+		padding:20px;
+		overflow-x:hidden;
+
+	}
+	.deal{
+		border:1px solid black;
+		width:30%;
+		height:300px;
+		display:inline-block;
+		margin:20px;
+		position:relative;
+	}
+	.sub-headers{
+		padding:30px;
+		text-align:center;
+		font-family:'Arial';
+	}
+	.deal img{
+		position:relative;
+		border:1px solid black;
+	}
+	.deal .deal-content{
+		position:absolute;
+		bottom:0;
+		right:0;
+		font-family:'Arial';
+		padding:20px;
+		text-align:center;
+		background-color:#d1a377;
+		color: black;
+	}
+	ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	}
+
+	li{
+		float:left;
+	}
+
+	.floatRight{
+		float:right;
+	}
+	a.ex1:hover, a.ex1:active{
+	  color: #072f5f;  background-color: white}
+	a.ex2:hover, a.ex2:active{
+	  color:  #58cced;  background-color: white}
+	a:link {
+	  text-decoration: none;
+	}
+	</style>
+	<script>
+		$(document).ready(function(){
+			var navbar = $("li");
+			navbar.hover(function(){
+				 $(this).css("background-color", "grey");
+			},function(){
+				$(this).css("background-color", "black");
+			});
+			
+			var deal = $(".deal");
+			deal.click(function(){
+				$(this).css("opacity","0.7");
+				
+			
+			});
+			$("#navbar").click(function(){
+				alert("you clicked the navbar");
+			});
+			$(".deal-content").dblclick(function(){
+				alert("You get an an off on this deal!!");
+			});
+			
+			
+			
+			
+		});
+	</script>
+</head>
+<body>
+<div id="page-wrapper">
+	<ul>
+			<li><a class="ex2" href="#Home">LOGO</a></li>
+			<li><a class="ex2" href="">Flights</a></li>
+			<li><a class="ex2" href="Hotels.html">Hotels</a></li>
+			<li><a class="ex2" href="TopDeals.html">Top Deals</a></li>
+			<div class="floatRight">
+			<li><a class="ex1" href="SignUp.html">Sign in</a></li>
+			<li><a class="ex1" href="Login.html">Login</a></li>
+			</div>
+	</ul>
+		
+		<div id="top-deal-div">
+		<h2 class="sub-headers">Hotel Deals</h2>
+			<div class="deal">
+				<a href="hotel-single.html">
+					<img src="top-deal-1.jpg" style="width:100%; height:100%;">
+				<h2 class="deal-content">20% Off!!</h2></a>
+			</div>
+			<div class="deal">
+				<a href="hotel-single.html">
+				<img src="top-deal-2.jpg" style="width:100%; height:100%;">
+				<h2 class="deal-content">15% Off!!</h2></a>
+			</div>
+			<div class="deal">
+				<a href="hotel-single.html">
+				<img src="top-deal-3.jpg" style="width:100%; height:100%;">
+				<h2 class="deal-content">30% Off!!</h2></a>
+			</div>
+			
+			<h2 class="sub-headers">Flight Deals</h2>
+			<div class="deal">
+				<a href="Confirm-flight.html">
+				<img src="flight-deal-1.jpg" style="width:100%; height:100%;">
+				<h2 class="deal-content">20% Off!!</h2></a>
+			</div>
+			<div class="deal">
+				<a href="Confirm-flight.html">
+				<img src="flight-deal-2.jpg" style="width:100%; height:100%;">
+				<h2 class="deal-content"> 20% Off!!</h2></a>
+			</div>
+			<div class="deal">
+				<a href="Confirm-flight.html">
+				<img src="flight-deal-3.png" style="width:100%; height:100%;">
+				<h2 class="deal-content">  10% Off!!</h2></a>
+			</div>
+		</div>
+
+	<div class="footer">
+		<p>Copyright@2018</p>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body{
+	margin:0;
+}
+ul{
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li{
+	float:left;
+}
+
+.floatRight{
+	float:right;
+}
+a:link {
+  text-decoration: none;
+}
+li a{
+  font-size:20px;
+  display: block;
+  color: #d1a377; 
+  text-align: center;
+  padding: 14px 16px;
+}
+li a:hover:not(.active) {
+  background-color: #d1a377;
+  color: black;
+}
+flex-container{
+	display:flex;
+	align-items: stretch;
+	background-color:blue;
+}

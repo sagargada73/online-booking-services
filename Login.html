@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="style2.css">
+	<title>Registration forms</title>
+</head>
+<body>
+<header>
+	<ul>
+			<li><a href="#Home">LOGO</a></li>
+			<li><a href="Flights.html">Flights</a></li>
+			<li><a href="Hotels.html">Hotels</a></li>
+			<li><a href="TopDeals.html">Top Deals</a></li>
+			<div class="floatRight">
+			<li><a href="SignUp.html">Sign in</a></li>
+			<li><a href="">Login</a></li></div>
+	</ul>
+</header>
+<div class="split left">
+<div class="centered">
+<form name="myForm" onsubmit="return validateForm()" method="post">	
+	<fieldset>
+	<br>
+	<legend>Login</legend>
+	Email ID
+	<input type="email" name="EmailID" placeholder="Enter Email ID" ><br>
+	Password<br>
+
+	<input type="password" name="password" id="password" title="Enter more than 8 characters" pattern=".{8,}" placeholder="More than 8 characters" required><br>
+	<input type="submit" class="button" name="submit" value="Login"><br><br>
+	</fieldset>
+	</div>
+</form>
+</div>
+</div>
+<div class="split right">
+<div class="centered">
+
+<form name="myForm" onsubmit="return validateForm()" method="post">	
+<fieldset>
+You can also login via:<br>
+<input type="button" class="button" name="Facebook" value="Facebook">
+<input type="button" class="button" name="Google" value="Google"><br>
+Not created your account yet?
+<a class="form" href="SignUp.html">Create account</a>
+</fieldset>
+</form>
+</div>	
+</div>
+</body>
+</html>
